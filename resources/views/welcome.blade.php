@@ -26,6 +26,7 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8" style="text-align: center">
                     <h2>NPCSOLUTION</h2>
                     <p>(Under construction)</p>
+                    <p>{{date('d-m-Y')}}</p>
             </div>
         </div>
     </body>
