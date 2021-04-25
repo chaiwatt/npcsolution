@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FaceBookLikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('getlist', [FaceBookLikeController::class, 'getlist'])->name('getlist');
+Route::get('setcookie', [FaceBookLikeController::class, 'setcookie'])->name('setcookie');
+Route::get('getcookie', [FaceBookLikeController::class, 'getcookie'])->name('getcookie');
+Route::get('userlogin', [FaceBookLikeController::class, 'userlogin'])->name('userlogin');
+Route::get('usersignup', [FaceBookLikeController::class, 'usersignup'])->name('usersignup');
