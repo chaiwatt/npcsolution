@@ -78,9 +78,9 @@ class FaceBookLikeController extends Controller
             $user->password = Hash::make($request->pass) ;
             $user->cookie = $rnd;
             $user->save();
-            $mail = "joerocknpc@gmail.com";
+           
             $cookie = Cookie::queue("user".$user->id, $rnd, 60); //cookie expire in 60 minutes.
-            EmailBox::send($mail,'สมัครใช้งานโปรแกรม FB Page Like Exchange','สวัสดีค่ะ '.$mail.' <br><br> คุณได้สมัครใช้งานโปรแกรม FB Page Like Exchange กรุณายืนยันอีเมลก่อนใช้งาน คลิก <a href='.route('getcookie').'?c='.$rnd.'&user='.$user->id.'>ยืนยันอีเมล</a><br>โปรดยืนยันการใช้งานภายใน 60 นาทีหลังจากได้รับอีเมลนี้<br><br>ขอบคุณค่ะ<br>FB Page Like Exchange Team' . EmailBox::emailSignature());
+            EmailBox::send($user->email,'สมัครใช้งานโปรแกรม FB Page Like Exchange','สวัสดีค่ะ '.$user->email.' <br><br> คุณได้สมัครใช้งานโปรแกรม FB Page Like Exchange กรุณายืนยันอีเมลก่อนใช้งาน คลิก <a href='.route('getcookie').'?c='.$rnd.'&user='.$user->id.'>ยืนยันอีเมล</a><br>โปรดยืนยันการใช้งานภายใน 60 นาทีหลังจากได้รับอีเมลนี้<br><br>ขอบคุณค่ะ<br>FB Page Like Exchange Team' . EmailBox::emailSignature());
             return response()->json($user);
         }
     }
