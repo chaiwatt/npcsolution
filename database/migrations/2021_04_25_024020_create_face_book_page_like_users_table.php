@@ -18,8 +18,8 @@ class CreateFaceBookPageLikeUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('cookie')->nullable();
             $table->string('password');
+            $table->char('paidmember',1)->default(1)->comment('1 = ฟรี , 2 = ซื้อ license');
             $table->timestamps();
         });
     }

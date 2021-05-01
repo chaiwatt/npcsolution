@@ -17,9 +17,17 @@ class FaceBookPageLikesTableSeeder extends Seeder
     {
         DB::table('face_book_page_like_users')->insert([
             [
-                'name' => 'สมพร',    
+                'name' => 'ชัยวัฒน์',    
                 'email' => 'contact@npcsolution.com',     
                 'password' => Hash::make('11111111'), 
+                'paidmember' => 2,
+                'email_verified_at' => Carbon::now()->toDateString(),
+            ],
+            [
+                'name' => 'กาญจน์',    
+                'email' => 'admin@npcsolution.com',     
+                'password' => Hash::make('11111111'), 
+                'paidmember' => 2,
                 'email_verified_at' => Carbon::now()->toDateString(),
             ]
         ]);

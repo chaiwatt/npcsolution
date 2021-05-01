@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(FaceBookPagesTableSeeder::class);
         $this->call(FaceBookPageLikesTableSeeder::class);
+        $this->call(InformationsTableSeeder::class);
         
     }
 }
