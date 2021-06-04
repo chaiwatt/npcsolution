@@ -13,9 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(FaceBookPagesTableSeeder::class);
-        $this->call(FaceBookPageLikesTableSeeder::class);
-        $this->call(InformationsTableSeeder::class);
+        // $this->call(User::class);
+
         
     }
 }
