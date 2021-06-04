@@ -5,7 +5,7 @@
 <head>
         <!-- meta tag -->
         <meta charset="utf-8">
-        <title>Braintech - IT Solutions and Technology Startup HTML Template</title>
+        <title>NPC SOLUTION AND SERVICE - ผลิตและจำหน่ายระบบคิวอัตโนมัติ</title>
         <meta name="description" content="">
         <!-- responsive tag -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
