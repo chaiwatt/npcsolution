@@ -47,53 +47,53 @@
 
 --------------------------------------------------------*/
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCr-x1S2hzjrlfXbeM-.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCq-x1S2hzjrlffw8Eesg.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCp-x1S2hzjrlfnbw.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCq-x1S2hzjrlffm8Aesg.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCq-x1S2hzjrlfft8cesg.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(http://fonts.gstatic.com/s/livvic/v5/rnCq-x1S2hzjrlff08Yesg.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Livvic';
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/livvic/v5/rnCq-x1S2hzjrlff68Qesg.ttf) format('truetype');
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
 }
 /* -----------------------------------
     01. General CSS
@@ -102,7 +102,7 @@ html,
 body {
   font-size: 16px;
   color: #454545;
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
   vertical-align: baseline;
   line-height: 26px;
   font-weight: 400;
@@ -122,7 +122,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
   color: #101010;
   margin: 0 0 26px;
   line-height: 1.2;
@@ -201,7 +201,7 @@ body.nav-expanded .offwrap {
 .bold-text {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 .extra-bold {
   font-weight: 800 !important;
@@ -1179,7 +1179,7 @@ blockquote cite:before {
   padding-right: 25px;
   position: relative;
   z-index: 1;
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 500;
   font-size: 15px;
   transition: all 0.3s;
@@ -1683,7 +1683,7 @@ blockquote cite:before {
   margin: 0 0 10px;
   display: block;
   line-height: 28px;
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #03228F;
@@ -2130,8 +2130,9 @@ blockquote cite:before {
   padding: 0;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
+  font-size: 16px;
   transition: all 0.3s ease;
-  font-size: 15px;
+  /* font-size: 15px; */
   font-weight: 600;
   margin-right: 10px;
   height: 65px;
@@ -2139,7 +2140,7 @@ blockquote cite:before {
   padding: 0;
   color: #ffffff;
   position: relative;
-  font-family: Livvic;
+  font-family: Kanit;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a:hover {
   color: #bbb;
@@ -2166,6 +2167,7 @@ blockquote cite:before {
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item > a {
   color: #bbb;
+
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li:last-child {
   margin-right: 0!important;
@@ -4244,7 +4246,7 @@ body .search-modal .close:hover {
   margin: 0 0 10px;
   display: block;
   line-height: 28px;
-  font-family: 'Livvic', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
