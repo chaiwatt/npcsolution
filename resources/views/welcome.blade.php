@@ -77,9 +77,9 @@
                                <div class="col-lg-4 text-right">
                                    <div class="toolbar-sl-share">
                                        <ul>
-                                            <li class="opening"> <em><i class="flaticon-clock"></i> 08:00am-6:00pm</em> </li>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                            <li class="opening"> <em><i class="flaticon-clock"></i>ทำการ 08:00-16:00น</em> </li>
+                                            <li><a href="https://www.facebook.com/smartquesystem/"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UClcDb79bnjr4ivdQxKlOzrA"><i class="fa fa-youtube"></i></a></li>
                                        </ul>
                                    </div>
                                </div>
@@ -142,30 +142,7 @@
                     <!-- Menu End --> 
                 </header>
                 <!--Header End-->
-                <!-- Canvas Menu start -->
-                <nav class="right_menu_togle hidden-md">
-                    <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
-                    <div class="canvas-logo">
-                        <a href="index.html"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt="logo"></a>
-                    </div>
-                    <div class="offcanvas-text">
-                        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
-                    </div>
-                    <div class="canvas-contact">
-                        <h5 class="canvas-contact-title">Contact Info</h5>
-                        <ul class="contact">
-                            <li><i class="fa fa-globe"></i>Middle Badda, Dhaka, BD</li>
-                            <li><i class="fa fa-phone"></i>+123445789</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
-                            <li><i class="fa fa-clock-o"></i>10:00 AM - 11:30 PM</li>
-                        </ul>
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Canvas Menu end -->
+
             </div>
             <!--Full width header End-->
          
@@ -183,7 +160,7 @@
                             <li>
                                 <div class="rs-videos">
                                     <div class="animate-border white-color">
-                                        <a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
+                                        <a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=sMhP9Z1TlVM">
                                             <i class="fa fa-play"></i>
                                         </a>
                                     </div>
@@ -199,12 +176,12 @@
             <div class="rs-services style4 gray-color pt-110 pb-120 md-pt-75 md-pb-80">
                 <div class="container">
                     <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text">Services</span>
+                        {{-- <span class="sub-text">Services</span> --}}
                         <h2 class="title">
-                           Our Featured Services
+                           บริการของเรา
                         </h2>
                         <div class="desc desc-text">
-                            We are working in IT services for 40 years and developing software applications and mobile apps for clients all over the world.
+                            เรารับผลิตและจำหน่ายระบบคิวอัตโนมัติ
                         </div>
                     </div>
                     <div class="row">
@@ -526,24 +503,24 @@
                         <div class="col-lg-4">
                            <div class="contact-box">
                                 <div class="sec-title mb-45">
-                                    <span class="sub-text new-text white-color">Let's Talk</span>
-                                    <h2 class="title white-color">Speak With Expert Engineers.</h2>
+                                    {{-- <span class="sub-text new-text white-color">Let's Talk</span> --}}
+                                    <h2 class="title white-color">ติดต่อเรา</h2>
                                 </div>
-                               <div class="address-box mb-25">
-                                   <div class="address-icon">
-                                       <i class="fa fa-home"></i>
-                                   </div>
-                                   <div class="address-text">
-                                        <span class="label">Email:</span>
-                                        <a href="tel:123222-8888">(123) 222-8888</a>
-                                   </div>
-                               </div>
                                <div class="address-box mb-25">
                                    <div class="address-icon">
                                        <i class="fa fa-phone"></i>
                                    </div>
                                    <div class="address-text">
-                                       <span class="label">Phone:</span>
+                                        <span class="label">โทรศัพท์:</span>
+                                        <a href="tel:123222-8888">(123) 222-8888</a>
+                                   </div>
+                               </div>
+                               <div class="address-box mb-25">
+                                   <div class="address-icon">
+                                       <i class="fa fa-envelope"></i>
+                                   </div>
+                                   <div class="address-text">
+                                       <span class="label">อีเมล:</span>
                                        <a href="#">contact@npcsolution.com</a>
                                    </div>
                                </div>
@@ -552,8 +529,8 @@
                                        <i class="fa fa-map-marker"></i>
                                    </div>
                                    <div class="address-text">
-                                       <span class="label">Address:</span>
-                                       <div class="desc">New Jesrsy, 1201, USA</div>
+                                       <span class="label">ที่อยู่:</span>
+                                       <div class="desc">105 หมู่ที่ 8 ต.เหมืองง่า อ.เมือง จ.ลำพูน 51000</div>
                                    </div>
                                </div>
                            </div>
@@ -561,8 +538,8 @@
                         <div class="col-lg-8 pl-70 md-pl-15 md-mt-40">
                             <div class="contact-widget onepage-style">
                                <div class="sec-title2 mb-40">
-                                   <span class="sub-text contact mb-15">Get In Touch</span>
-                                   <h2 class="title testi-title">Fill The Form Below</h2>
+                                   {{-- <span class="sub-text contact mb-15">กรอกข้อมูลติดต่อ</span> --}}
+                                   <h2 class="title testi-title">กรอกข้อมูลติดต่อ</h2>
 
                                </div>
                                 <div id="form-messages"></div>
@@ -570,25 +547,24 @@
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                                <input class="from-control" type="text" name="name" placeholder="ชื่อ">
                                             </div> 
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                                <input class="from-control" type="text" name="email" placeholder="อีเมล">
                                             </div>   
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                                <input class="from-control" type="text" name="phone" placeholder="เบอร์โทรศัพท์">
                                             </div>   
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                                <input class="from-control" type="text" id="Website" name="subject" placeholder="Your Website" required="">
-                                            </div>
+                                                <input class="from-control" type="text" name="company" placeholder="หน่วยงาน">
+                                            </div>   
                                       
-                                            <div class="col-lg-12 mb-30">
-                                                <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
-                                            </div>
+                                    
                                         </div>
                                         <div class="btn-part">
                                             <div class="form-group mb-0">
-                                                <input class="readon learn-more submit" type="submit" value="Submit Now">
+                                                <button class="readon learn-more submit">ส่งข้อมูล</button>
+                                                {{-- <input class="readon learn-more submit" type="submit" value="Submit Now"> --}}
                                             </div>
                                         </div> 
                                     </fieldset>
@@ -612,40 +588,35 @@
                             <div class="footer-logo mb-30">
                                 <a href="index.html"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
                             </div>
-                              <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                              <div class="textwidget pb-30"><p>บริษัท เอ็นพีซีโซลูชั่นแอนด์เซอร์วิส จำกัด เลขที่ 105 หมู่ที่ 8 ตำบลเหมืองง่า อำเภอเมือง จังหวัดลำพูน 51000 <br> เลขประจำตัวผู้เสียภาษี 0515558000967</p>
                               </div>
                               <ul class="footer-social md-mb-30">  
                                   <li> 
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                                      <a href="https://www.facebook.com/smartquesystem/" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
                                   </li>
                                   <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-youtube"></i></span></a> 
+                                      <a href="https://www.youtube.com/channel/UClcDb79bnjr4ivdQxKlOzrA" target="_blank"><span><i class="fa fa-youtube"></i></span></a> 
                                   </li>
 
                                                                            
                               </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                            <h3 class="widget-title">IT Services</h3>
+                            <h3 class="widget-title">บริการของเรา</h3>
                             <ul class="site-map">
-                                <li><a href="software-development.html">Software Development</a></li>
-                                <li><a href="web-development.html">Web Development</a></li>
-                                <li><a href="case-studies-single.html">Analytic Solutions</a></li>
-                                <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                <li><a href="product-design.html">Project Design</a></li>
+                                <li><a href="software-development.html">ผลิตและจำหน่ายระบบคิวอัตโนมัติ</a></li>
+                                <li><a href="web-development.html">ออกแบบและระบบติดตั้งเครือข่าย</a></li>
+                                <li><a href="case-studies-single.html">ออกแบบและพัฒนาระบบสารสนเทศ</a></li>
+                                <li><a href="cloud-and-devops.html">อบรมการเขียนโปรแกรมและเว็บไซต์</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
-                            <h3 class="widget-title">Contact Info</h3>
+                            <h3 class="widget-title">ติดต่อ</h3>
                             <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
-                                </li>
                                 <li>
                                     <i class="flaticon-call"></i>
                                     <div class="desc">
-                                       <a href="tel:(+880)155-69569">(+880)155-69569</a>
+                                       <a href="tel:(+880)155-69569">053-2222222, 088-2514838</a>
                                     </div>
                                 </li>
                                 <li>
@@ -657,16 +628,16 @@
                                 <li>
                                     <i class="flaticon-clock-1"></i>
                                     <div class="desc">
-                                        Opening Hours: 10:00 - 18:00   
+                                        เวลาทำการ จันทร์-เสาร์: 08:00 - 10:00 น. 
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12">
-                            <h3 class="widget-title">Newsletter</h3>
-                            <p class="widget-desc">We denounce with righteous and in and dislike men who are so beguiled and demo realized.</p>
+                            <h3 class="widget-title">สมัครรับข่าวสาร</h3>
+                            <p class="widget-desc">กรอกอีเมลเพื่อรับข้อมูลที่เป็นประโยชน์ ท่านสามารถยกเลิกการรับข้อมูลได้ตลอดเวลา</p>
                             <p>
-                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                <input type="email" name="EMAIL" placeholder="กรอกอีเมล" required="">
                                 <em class="paper-plane"><input type="submit" value="Sign up"></em>
                                 <i class="flaticon-send"></i>
                             </p>
@@ -679,16 +650,16 @@
                     <div class="row y-middle">
                         <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="index.html">หน้าแรก</a></li>
+                                <li><a href="about.html">บริการ</a></li>
+                                <li><a href="blog.html">ลูกค้าของเรา</a></li>
+                                <li><a href="shop.html">ติดต่อ</a></li>
+                                {{-- <li><a href="faq.html">FAQs</a></li> --}}
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <div class="copyright">
-                                <p>&copy; 2021 All Rights Reserved. Developed By <a href="http://npcsolution.com.com/">NPC SOLUTION AND SERVICE</a></p>
+                                <p>&copy; {{date("Y")}} สงวนลิขสิทธิ์ โดย <a href="https://npcsolution.com/">บริษัท เอ็นพีซีโซลูชั่นแอนด์เซอร์วิส จำกัด</a></p>
                             </div>
                         </div>
                     </div>
@@ -702,25 +673,6 @@
             <i class="fa fa-angle-up"></i>
         </div>
         <!-- End scrollUp  -->
-
-        <!-- Search Modal Start -->
-        {{-- <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span class="flaticon-cross"></span>
-            </button>
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="search-block clearfix">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Search Here..." type="text">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Search Modal End -->
 
          <!-- modernizr js -->
         <script src="{{asset('assets/website/js/modernizr-2.8.3.min.js')}}"></script>
