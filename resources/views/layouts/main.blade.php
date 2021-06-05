@@ -5,7 +5,7 @@
 <head>
         <!-- meta tag -->
         <meta charset="utf-8">
-        <title>NPC SOLUTION AND SERVICE - ผลิตและจำหน่ายระบบคิวอัตโนมัติ</title>
+        <title>เอ็นพีซีโซลูชั่นแอนเซอร์วิส จำกัด - ผลิตและจำหน่ายระบบคิวอัตโนมัติ</title>
         <meta name="description" content="">
         <!-- responsive tag -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -107,7 +107,7 @@
                                                        <a href="#services">บริการ</a>
                                                    </li>
                                                    <li>
-                                                       <a href="#">ลูกค้าของเรา</a>
+                                                       <a href="#customers">ลูกค้าของเรา</a>
                                                    </li>
                                                    <li>
                                                        <a href="#blog">บทความ</a>
@@ -144,13 +144,13 @@
             <div class="rs-banner style4">
                 <div class="container">
                     <div class="banner-content">
-                        <span class="sub-title">Technology & It Solutions </span>
-                       <h1 class="title">Excellent IT services for your success</h1>
+                        <span class="sub-title">Our mission</span>
+                       <h1 class="title">พันธกิจของเรา</h1>
                         <p class="desc">
-                            We are Leading Technology Solutions Providing Company all over the world doing over 40 years.
+                            ออกแบบและพัฒนาไอทีโซลูชั่นหลากหลายรูปแบบเพื่อตอบสนองความต้องการของลูกค้า โดยใช้เทคโนโลยีที่ทันสมัย
                         </p>
                         <ul class="banner-btn">
-                            <li><a class="readon discover" href="about.html">Discover More</a></li>
+                            <li><a class="readon discover" href="about.html">เพิ่มเติม</a></li>
                             <li>
                                 <div class="rs-videos">
                                     <div class="animate-border white-color">
@@ -170,27 +170,28 @@
             <div id="services" class="rs-services style4 gray-color pt-110 pb-120 md-pt-75 md-pb-80">
                 <div class="container">
                     <div class="sec-title2 text-center mb-45">
-                        {{-- <span class="sub-text">Services</span> --}}
+                        <span class="sub-text">Services</span>
                         <h2 class="title">
                            บริการของเรา
                         </h2>
-                        <div class="desc desc-text">
-                            เรารับผลิตและจำหน่ายระบบคิวอัตโนมัติ
-                        </div>
+                        {{-- <div class="mt-4" style="font-size:18px; text-align:left">
+                            เราเป็นบริษัทที่ให้บริการด้านอินโนเวชั่นหลากหลายรูปแบบทั้งด้านฮาร์ดแวร์ ซอร์ฟแวร์ การพัฒนาระบบสารสนเทศ การติดตั้งระบบเครือข่าย และการอบรมด้านการเขียนโปรแกรมและเว็บไซต์ ลูกค้าที่เราได้พัฒนาระบบสารสนเทศให้มีหลากหลายหน่วยงานแตกต่างธุรกิจและมีหน่วยงานระดับประเทศ เช่น กรมคุมประพฤติ (กระทรวงยุติธรรม), สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม (สำนักงานใหญ่), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.), ธนาคารเพื่อสหกรณ์การเกษตรสำนักงานใหญ่บางเขน นอกจากนี้ยังมีหน่วยงานและบริษัทอื่น ๆ เช่น บริษัทคอมเซเว่น, โรงพยาบาลศิริราช, โรงพยาบาลพุทธโสธร เป็นต้น
+                        </div> --}}
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="services-item">
+                            
+                            <div class="services-item active">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/website/images/services/style4/1.png')}}" alt="">
+                                    <img src="{{asset('assets/website/images/services/style4/01.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Warranty Management IT</a></h2>
-                                    <p class="desc">
-                                        We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
+                                    <h2 class="title"><a href="#">ระบบคิวอัตโนมัติ</a></h2>
+                                    <p style="font-size:17px; text-align:center">
+                                       ระบบคิวอัตโนมัติของเราพัฒนาบนระบบเว็บแอพลิเคชั่น การทำงานผ่านเว็บบราวเซอร์ทำให้ไม่มีปัญหาเรื่องการติดตั้งโปรแกรมหรือรุ่นของระบบปฏิบัติการ นอกจากนี้ยังมีระบบรายงานข้อมูลแบบเรียลไทม์ทำให้สามารถทราบสถานะการใช้งานได้ทันที สามารถนำข้อมูลไปประยุกต์ในการจัดลำดับคิวได้ดียิ่งขึ้น นอกจากนี้ยังมีระบบการแจ้งเตือนผ่านระบบออนไลน์ เช่น การแจ้งเตือนผ่านระบบไลน์, SMS หรืออีเมล เป็นต้น
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Read More</a>
+                                        <a href="#">เพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -198,31 +199,31 @@
                         <div class="col-md-4">
                             <div class="services-item active">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/website/images/services/style4/2.png')}}" alt="">
+                                    <img src="{{asset('assets/website/images/services/style4/02.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Product Control Services</a></h2>
-                                    <p class="desc">
-                                        We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
+                                    <h2 class="title"><a href="#">พัฒนาระบบสารสนเทศ</a></h2>
+                                    <p style="font-size:17px; text-align:center">
+                                        เรารับพัฒนาระบบสารสนเทศหลากหลายรูปแบบ เช่น ระบบบริหารจัดการโรงพยาบาล (HIS), ระบบบัญชี, ระบบที่มีจุดประสงค์การใช้งานเฉพาะ โดยเรามีนักพัฒนาที่มีประสบการณ์ในหลายสาขา เช่น นักวิเคราะห์ระบบ (Systems analysis) โปรแกรมเมอร์ และ Tester นอกจากนี้เรายังใช้เครื่องที่ทันสมัยที่สุดเพื่อให้ระบบสามารถนำไปพัฒนาต่อได้ง่ายในอนาคต เช่น การพัฒนาเว็บแอพลิเคชั่นด้วย Laravel, VueJS เป็นต้น
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Read More</a>
+                                        <a href="#">เพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="services-item">
+                            <div class="services-item active">
                                 <div class="services-icon">
-                                    <img src="{{asset('assets/website/images/services/style4/3.png')}}" alt="">
+                                    <img src="{{asset('assets/website/images/services/style4/03.png')}}" alt="">
                                 </div>
                                 <div class="services-content">
-                                    <h2 class="title"><a href="#">Quality Control System</a></h2>
-                                    <p class="desc">
-                                        We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.
+                                    <h2 class="title"><a href="#">การอบรมการเขียนโปรแกรม</a></h2>
+                                    <p style="font-size:17px; text-align:center">
+                                        เรามีหลักสูตรอบรม Full Stack Developper โดยเน้นให้สามารถนำไปใช้งานได้จริงทั้งด้านการออกแบบเว็บไซต์ (Frontend) และการเชื่อมต่อระบบฐาน (Backend) นอกจากนี้ยังมีการอบรม การติดตั้ง Web server ด้วย VPS, การตั้งค่าโดเมน, การตั้งค่า SSL, การติดตั้ง Mail Server โดยผู้อบรมจะสามารถได้เรียนเขียนทั้งโปรแกรมและอบรมการ System Admin ซึ่งเป็นพื้นฐานที่ Full Stack Developper รุ่นใหม่ ต้องควรเรียนรู้
                                     </p>
                                     <div class="services-btn2">
-                                        <a href="#">Read More</a>
+                                        <a href="#">เพิ่มเติม</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,10 +241,10 @@
                             <div class="sec-title2 mb-30">
                                 <div class="sub-text">Our Company</div>
                                 <h2 class=" title title3 pb-20">
-                                    We’ve been triumphing all these 40 years.
+                                    เกี่ยวกับเรา
                                 </h2>
                                 <div class="desc desc2">
-                                    Bring to the table win-win survival strategies done to ensure dotted proactive domination. Customers we can for done working a new normal that has evolved from generation on the runway heading towards a streamlined. Now you will be able to insert any section template to your live site instantly.
+                                    เราเป็นบริษัทที่ให้บริการด้านอินโนเวชั่นหลากหลายรูปแบบทั้งด้านฮาร์ดแวร์ ซอร์ฟแวร์ การพัฒนาระบบสารสนเทศ การติดตั้งระบบเครือข่าย และการอบรมด้านการเขียนโปรแกรมและเว็บไซต์ ลูกค้าที่เราได้พัฒนาระบบสารสนเทศให้มีหลากหลายหน่วยงานแตกต่างธุรกิจและมีหน่วยงานระดับประเทศ เช่น กรมคุมประพฤติ (กระทรวงยุติธรรม), สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม (สำนักงานใหญ่), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.), ธนาคารเพื่อสหกรณ์การเกษตรสำนักงานใหญ่บางเขน นอกจากนี้ยังมีหน่วยงานและบริษัทอื่น ๆ เช่น บริษัท คอมเซเว่นจํากัด มหาชน, โรงพยาบาลศิริราช, โรงพยาบาลพุทธโสธร เป็นต้น
                                 </div>
                                 <div class="btn-part mt-40">
                                     <a class="readon discover more" href="#">Learn More</a>
@@ -271,7 +272,7 @@
                     <div class="sec-title2 text-center mb-45">
                         <span class="sub-text white-color">Technology Index</span>
                         <h2 class="title title2 white-color">
-                           What Technology We Are Using For Our Valued Customers
+                           เทคโนโลยีล่าสุดที่เราใช้สำหรับพัฒนาระบบให้ลูกค้า
                         </h2>
                     </div>
                     <div class="row">
@@ -280,13 +281,13 @@
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
                                          <a href="#">
-                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/1.png')}}" alt="hover-image">
-                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/1.png')}}" alt="hover-image">
+                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/01.png')}}" alt="hover-image">
+                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/01.png')}}" alt="hover-image">
                                          </a>
                                      </div>
                                 </div>
                                 <div class="logo-title">
-                                      <h4 class="title">Vue Js</h4>
+                                      <h4 class="title">Laravel</h4>
                                 </div> 
                             </div>
                        </div>
@@ -295,13 +296,13 @@
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
                                          <a href="#">
-                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/2.png')}}" alt="grid-image">
-                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/2.png')}}" alt="grid-image">
+                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/02.png')}}" alt="grid-image">
+                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/02.png')}}" alt="grid-image">
                                          </a>
                                      </div>
                                 </div>
                                 <div class="logo-title">
-                                      <h4 class="title">Python</h4>
+                                      <h4 class="title">VueJs</h4>
                                 </div> 
                             </div>
                        </div>
@@ -340,13 +341,13 @@
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
                                          <a href="#">
-                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/5.png')}}" alt="grid-image">
-                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/5.png')}}" alt="grid-image">
+                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/05.png')}}" alt="grid-image">
+                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/05.png')}}" alt="grid-image">
                                          </a>
                                      </div>
                                 </div>
                                 <div class="logo-title">
-                                      <h4 class="title">C#</h4>
+                                      <h4 class="title">Git Hub</h4>
                                 </div> 
                             </div>
                        </div>
@@ -355,13 +356,13 @@
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
                                          <a href="#">
-                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/6.png')}}" alt="grid-image">
-                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/6.png')}}" alt="grid-image">
+                                           <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/06.png')}}" alt="grid-image">
+                                           <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/06.png')}}" alt="grid-image">
                                          </a>
                                      </div>
                                 </div>
                                 <div class="logo-title">
-                                      <h4 class="title">Linux</h4>
+                                      <h4 class="title">Visual Studio</h4>
                                 </div> 
                             </div>
                        </div>
@@ -370,16 +371,165 @@
             </div>
             <!-- Technology Section End -->
 
+            <!-- Technology Section Start -->
+            <div id="customers" class="rs-technology gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+                <div class="container">
+                    <div class="sec-title2 text-center mb-45">
+                        <span class="sub-text gold-color">Our customer</span>
+                        <h2 class="title title2">
+                           ลูกค้าของเรา
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/1.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/2.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/3.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/4.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/5.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/6.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/7.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/8.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/9.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/10.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/11.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/12.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/13.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                           <div class="technology-item">
+                               <a href="#">
+                                   <div class="logo-img">
+                                       <img src="{{asset('assets/website/images/technology/style2/14.png')}}" alt="">
+                                   </div>
+                               </a>
+                           </div>
+                        </div>
+
+  
+                    </div>
+                    {{-- <div class="col-lg-12 text-center">
+                        <div class="btn-part mt-30">
+                            <a class="readon started" href="#">Get Started</a>
+                        </div>
+                    </div> --}}
+                </div>  
+            </div>
+            <!-- Technology Section End -->
+
+
             <!-- Blog Section Start -->
             <div id="blog" class="rs-blog pt-110 pb-120 md-pt-75 md-pb-80">
                 <div class="container">  
                     <div class="sec-title2 text-center mb-30">
                         <span class="sub-text">Blogs</span>
                             <h2 class="title testi-title">
-                                Latest Tips &Tricks
+                                บทความ
                             </h2>
                         <div class="desc">
-                            We've been building creative tools together for over a decade and have a deep appreciation for software applications
+                            บทความ สาระน่ารู้และข้อมูลทางเทคโนโลยีที่เป็นประโยชน์จากทีมงาน
                         </div>
                     </div>
                     <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
@@ -489,9 +639,9 @@
                 </div>
             </div>
             <!-- Blog Section End -->
-            
+
             <!-- Contact Section Start -->
-            <div id="contact" class="rs-contact pt-120 gray-color">
+            <div id="contact" class="rs-contact pt-120 gray-color pb-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
@@ -569,6 +719,7 @@
                 </div>
 
             </div>
+
             <!-- Contact Section Start -->
         </div> 
         <!-- Main content End -->
@@ -598,10 +749,10 @@
                         <div class="col-lg-3 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
                             <h3 class="widget-title">บริการของเรา</h3>
                             <ul class="site-map">
-                                <li><a href="software-development.html">ผลิตและจำหน่ายระบบคิวอัตโนมัติ</a></li>
+                                <li><a href="#">ผลิตและจำหน่ายระบบคิวอัตโนมัติ</a></li>
                                 <li><a href="#">ออกแบบและระบบติดตั้งเครือข่าย</a></li>
-                                <li><a href="case-studies-single.html">ออกแบบและพัฒนาระบบสารสนเทศ</a></li>
-                                <li><a href="cloud-and-devops.html">อบรมการเขียนโปรแกรมและเว็บไซต์</a></li>
+                                <li><a href="#">ออกแบบและพัฒนาระบบสารสนเทศ</a></li>
+                                <li><a href="#">อบรมการเขียนโปรแกรมและเว็บไซต์</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
@@ -685,6 +836,8 @@
         {{-- <script src="{{asset('assets/website/js/contact.form.js')}}"></script> --}}
         <!-- main js -->
         <script src="{{asset('assets/website/js/main.js')}}"></script>
+
+        @include('sweetalert::alert')
     </body>
 
 </html>
