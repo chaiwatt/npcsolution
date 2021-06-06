@@ -12,7 +12,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.html">
+        {{-- <link rel="apple-touch-icon" href="apple-touch-icon.html"> --}}
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/website/images/fav.png')}}">
         <!-- Bootstrap v4.4.1 css -->
         <link rel="stylesheet" type="text/css" href="{{asset('assets/website/css/bootstrap.min.css')}}">
@@ -65,7 +65,7 @@
                                        </li>
                                        <li>
                                            <i class="flaticon-call"></i>
-                                           <a href="tel:++1(990)999–5554"> +1 (990) 999–5554</a>
+                                           <a href="tel:(6653)093254"> 053-093254</a>
                                        </li>
                                    </ul>
                                </div>
@@ -88,7 +88,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-3">
                                     <div class="logo-part">
-                                        <a href="index.html"><img src="{{asset('')}}assets/website/images/logo-dark.png" alt=""></a>
+                                        <a href="#"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                     <div class="mobile-menu">
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
@@ -152,7 +152,7 @@
                             ออกแบบและพัฒนาไอทีโซลูชั่นหลากหลายรูปแบบเพื่อตอบสนองความต้องการของลูกค้า โดยใช้เทคโนโลยีที่ทันสมัย
                         </p>
                         <ul class="banner-btn">
-                            <li><a class="readon discover" href="about.html">เพิ่มเติม</a></li>
+                            <li><a class="readon discover" href="#">เพิ่มเติม</a></li>
                             <li>
                                 <div class="rs-videos">
                                     <div class="animate-border white-color">
@@ -464,8 +464,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">เครื่องอ่านบัตรประชาชนพร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">เครื่องอ่านบัตรประชาชนพร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -481,8 +481,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์คีออสพร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">ปริ้นเตอร์คีออสพร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -498,8 +498,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">ลิ้นชักเก็บเงินพร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">ลิ้นชักเก็บเงินพร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -515,8 +515,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์ความร้อนพร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">ปริ้นเตอร์ความร้อนพร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -532,8 +532,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -549,8 +549,8 @@
                             <div class="project-content ">
                                 <div class="vertical-middle">
                                     <div class="vertical-middle-cell">
-                                        <h3 class="title"><a href="case-studies-style1.html">บอร์ด Access Controll พร้อม SDK</a></h3>
-                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                        <h3 class="title"><a href="#">บอร์ด Access Controll พร้อม SDK</a></h3>
+                                        <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -657,7 +657,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
+                                <a href="#"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
                             </div>
                               <div class="textwidget pb-30"><p>บริษัท เอ็นพีซีโซลูชั่นแอนด์เซอร์วิส จำกัด เลขที่ 105 หมู่ที่ 8 ตำบลเหมืองง่า อำเภอเมือง จังหวัดลำพูน 51000 <br> เลขประจำตัวผู้เสียภาษี 0515558000967</p>
                               </div>
@@ -687,7 +687,7 @@
                                 <li>
                                     <i class="flaticon-call"></i>
                                     <div class="desc">
-                                       <a href="tel:(+880)155-69569">053-2222222, 088-2514838</a>
+                                       <a href="tel:(+6653)093254">053-093254, 088-2514838</a>
                                     </div>
                                 </li>
                                 <li>
@@ -721,10 +721,10 @@
                     <div class="row y-middle">
                         <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
-                                <li><a href="index.html">หน้าแรก</a></li>
-                                <li><a href="about.html">บริการ</a></li>
-                                <li><a href="blog.html">ลูกค้าของเรา</a></li>
-                                <li><a href="shop.html">ติดต่อ</a></li>
+                                <li><a href="#">หน้าแรก</a></li>
+                                <li><a href="#services">บริการ</a></li>
+                                <li><a href="#customers">ลูกค้าของเรา</a></li>
+                                <li><a href="#contact">ติดต่อ</a></li>
                                 {{-- <li><a href="faq.html">FAQs</a></li> --}}
                             </ul>
                         </div>
@@ -738,6 +738,8 @@
             </div>
         </footer>
         <!-- Footer End -->
+
+    </li>
 
         <!-- start scrollUp  -->
         <div id="scrollUp" class="orange-color">
