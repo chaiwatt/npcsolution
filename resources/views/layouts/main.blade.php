@@ -5,6 +5,7 @@
 <head>
         <!-- meta tag -->
         <meta charset="utf-8">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
         <title>เอ็นพีซีโซลูชั่นแอนเซอร์วิส จำกัด - ผลิตและจำหน่ายระบบคิวอัตโนมัติ</title>
         <meta name="description" content="">
         <!-- responsive tag -->
@@ -31,7 +32,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('assets/website/css/style.css')}}"> <!-- This stylesheet dynamically changed from style.less -->
         <!-- responsive css -->
         <link rel="stylesheet" type="text/css" href="{{asset('assets/website/css/responsive.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('assets/website/css/extend.css')}}">
+        
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -104,13 +105,14 @@
                                                        <a href="#header">หน้าแรก</a>
                                                    </li>
                                                    <li>
+                                                        <a href="#customers">ลูกค้าของเรา</a>
+                                                    </li>
+                                                   <li>
                                                        <a href="#services">บริการ</a>
                                                    </li>
+
                                                    <li>
-                                                       <a href="#customers">ลูกค้าของเรา</a>
-                                                   </li>
-                                                   <li>
-                                                       <a href="#blog">บทความ</a>
+                                                       <a href="#products">สินค้า</a>
                                                    </li>
                                                    <li>
                                                        <a href="#contact">ติดต่อ</a>
@@ -161,10 +163,77 @@
                                 </div> 
                             </li>
                         </ul>
+                        <div id="customers"></div>
                     </div>
                 </div>
             </div>
+            
             <!-- Banner Section End -->
+
+            <!-- customers Start -->
+            <div class="rs-partner style2 pt-50 pb-50">
+                <div class="container">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/1.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/2.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/3.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/4.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/5.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/6.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/7.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="logo-img">
+                                <a href="#">
+                                    <img src="{{asset('assets/website/images/clients/8.png')}}" style="width: 100px;width:100px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Partner End -->
 
             <!-- Services Section Start -->
             <div id="services" class="rs-services style4 gray-color pt-110 pb-120 md-pt-75 md-pb-80">
@@ -220,7 +289,7 @@
                                 <div class="services-content">
                                     <h2 class="title"><a href="#">การอบรมการเขียนโปรแกรม</a></h2>
                                     <p style="font-size:17px; text-align:center">
-                                        เรามีหลักสูตรอบรม Full Stack Developper โดยเน้นให้สามารถนำไปใช้งานได้จริงทั้งด้านการออกแบบเว็บไซต์ (Frontend) และการเชื่อมต่อระบบฐาน (Backend) นอกจากนี้ยังมีการอบรม การติดตั้ง Web server ด้วย VPS, การตั้งค่าโดเมน, การตั้งค่า SSL, การติดตั้ง Mail Server โดยผู้อบรมจะสามารถได้เรียนเขียนทั้งโปรแกรมและอบรมการ System Admin ซึ่งเป็นพื้นฐานที่ Full Stack Developper รุ่นใหม่ ต้องควรเรียนรู้
+                                        เรามีหลักสูตรอบรม Full Stack Developper โดยเน้นให้สามารถนำไปใช้งานได้จริงทั้งด้านการออกแบบเว็บไซต์ (Frontend) และการเชื่อมต่อระบบฐาน (Backend), การติดตั้ง Web server บน VPS, การตั้งค่าโดเมน, การตั้งค่า SSL, การติดตั้ง Mail Server, การทำ SMTP relay โดยผู้อบรมจะสามารถได้เรียนเขียนทั้งโปรแกรมและอบรมการ System Admin ซึ่งเป็นทักษะสำคัญที่ Full Stack Developper จำเป็นต้องเรียนรู้
                                     </p>
                                     <div class="services-btn2">
                                         <a href="#">เพิ่มเติม</a>
@@ -244,11 +313,11 @@
                                     เกี่ยวกับเรา
                                 </h2>
                                 <div class="desc desc2">
-                                    เราเป็นบริษัทที่ให้บริการด้านอินโนเวชั่นหลากหลายรูปแบบทั้งด้านฮาร์ดแวร์ ซอร์ฟแวร์ การพัฒนาระบบสารสนเทศ การติดตั้งระบบเครือข่าย และการอบรมด้านการเขียนโปรแกรมและเว็บไซต์ ลูกค้าที่เราได้พัฒนาระบบสารสนเทศให้มีหลากหลายหน่วยงานแตกต่างธุรกิจและมีหน่วยงานระดับประเทศ เช่น กรมคุมประพฤติ (กระทรวงยุติธรรม), สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม (สำนักงานใหญ่), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.), ธนาคารเพื่อสหกรณ์การเกษตรสำนักงานใหญ่บางเขน นอกจากนี้ยังมีหน่วยงานและบริษัทอื่น ๆ เช่น บริษัท คอมเซเว่นจํากัด มหาชน, โรงพยาบาลศิริราช, โรงพยาบาลพุทธโสธร เป็นต้น
+                                    เราเป็นบริษัทที่ให้บริการด้านอินโนเวชั่นหลากหลายรูปแบบทั้งด้านฮาร์ดแวร์ ซอร์ฟแวร์ การพัฒนาระบบสารสนเทศ การติดตั้งระบบเครือข่าย และการอบรมด้านการเขียนโปรแกรมและเว็บไซต์ ลูกค้าที่เราได้พัฒนาระบบสารสนเทศให้มีหลากหลายหน่วยงานแตกต่างธุรกิจและมีหน่วยงานระดับประเทศ เช่น กรมคุมประพฤติ (กระทรวงยุติธรรม), สำนักงานการปฏิรูปที่ดินเพื่อเกษตรกรรม (สำนักงานใหญ่), สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.), ธนาคารเพื่อสหกรณ์การเกษตรสำนักงานใหญ่ (บางเขน) นอกจากนี้ยังมีหน่วยงานและบริษัทเอกชนอื่น ๆ เช่น บริษัท คอมเซเว่นจํากัด มหาชน, โรงพยาบาลศิริราช, โรงพยาบาลพุทธโสธร เป็นต้น
                                 </div>
-                                <div class="btn-part mt-40">
+                                {{-- <div class="btn-part mt-40">
                                     <a class="readon discover more" href="#">Learn More</a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-lg-7 md-pt-40">
@@ -280,7 +349,7 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://laravel.com/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/01.png')}}" alt="hover-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/01.png')}}" alt="hover-image">
                                          </a>
@@ -295,7 +364,7 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://vuejs.org/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/02.png')}}" alt="grid-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/02.png')}}" alt="grid-image">
                                          </a>
@@ -310,14 +379,14 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://www.mysql.com/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/3.png')}}" alt="grid-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/3.png')}}" alt="grid-image">
                                          </a>
                                      </div>
                                 </div>
                                 <div class="logo-title">
-                                      <h4 class="title"> My Sql</h4>
+                                      <h4 class="title">My Sql</h4>
                                 </div> 
                             </div>
                        </div>
@@ -325,7 +394,7 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://firebase.google.com/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/4.png')}}" alt="grid-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/4.png')}}" alt="grid-image">
                                          </a>
@@ -340,7 +409,7 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://github.com/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/05.png')}}" alt="grid-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/05.png')}}" alt="grid-image">
                                          </a>
@@ -355,7 +424,7 @@
                             <div class="technology-wrap">
                                 <div class="rs-grid-figure">
                                      <div class="logo-img">
-                                         <a href="#">
+                                         <a href="https://visualstudio.microsoft.com/" target="_blank">
                                            <img class="hover-img" src="{{asset('assets/website/images/technology/style4/hover-img/06.png')}}" alt="grid-image">
                                            <img class="main-img" src="{{asset('assets/website/images/technology/style4/main-img/06.png')}}" alt="grid-image">
                                          </a>
@@ -371,274 +440,122 @@
             </div>
             <!-- Technology Section End -->
 
-            <!-- Technology Section Start -->
-            <div id="customers" class="rs-technology gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+            <!-- Project Section Start -->
+            <div id="products" id="rs-portfolio" class="rs-project  style2 pt-120 pb-120 md-pt-80 md-pb-80">
                 <div class="container">
-                    <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text gold-color">Our customer</span>
-                        <h2 class="title title2">
-                           ลูกค้าของเรา
+                    {{-- <div class="sec-title2 text-center mb-45">
+                        <span class="sub-text style-bg white-color">Projects</span>
+                        <h2 class="title title2 white-color">
+                           Our Recent Launched Projects Available into Market
                         </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/1.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/2.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/3.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/4.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/5.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/6.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/7.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/8.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/9.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/10.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/11.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/12.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/13.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                           <div class="technology-item">
-                               <a href="#">
-                                   <div class="logo-img">
-                                       <img src="{{asset('assets/website/images/technology/style2/14.png')}}" alt="">
-                                   </div>
-                               </a>
-                           </div>
-                        </div>
-
-  
-                    </div>
-                    {{-- <div class="col-lg-12 text-center">
-                        <div class="btn-part mt-30">
-                            <a class="readon started" href="#">Get Started</a>
-                        </div>
                     </div> --}}
-                </div>  
-            </div>
-            <!-- Technology Section End -->
-
-
-            <!-- Blog Section Start -->
-            <div id="blog" class="rs-blog pt-110 pb-120 md-pt-75 md-pb-80">
-                <div class="container">  
-                    <div class="sec-title2 text-center mb-30">
-                        <span class="sub-text">Blogs</span>
-                            <h2 class="title testi-title">
-                                บทความ
-                            </h2>
-                        <div class="desc">
-                            บทความ สาระน่ารู้และข้อมูลทางเทคโนโลยีที่เป็นประโยชน์จากทีมงาน
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/1.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">เครื่องอ่านบัตรประชาชนพร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>เครื่องอ่านบัตรประชาชนพร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/2.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์คีออสพร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์คีออสพร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/3.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">ลิ้นชักเก็บเงินพร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>ลิ้นชักเก็บเงินพร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/4.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์ความร้อนพร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์ความร้อนพร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/5.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="#"><img src="{{asset('assets/website/images/shop/5.jpg')}}" alt="images"></a>
+                            </div>
+                            <div class="project-content ">
+                                <div class="vertical-middle">
+                                    <div class="vertical-middle-cell">
+                                        <h3 class="title"><a href="case-studies-style1.html">บอร์ด Access Controll พร้อม SDK</a></h3>
+                                        <span class="category"><a href="case-studies-style1.html">เพิ่มลงตะกร้า</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-desc text-center">
+                                <div class="pt-20" style="font-size: 22px;"><h4>บอร์ด Access Controll พร้อม SDK</h4></div>
+                                <span  style="font-size: 22px;">2500.00 บาท</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/1.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#">Software Development</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 16 Nov 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Necessity May Give Us Your Best Virtual Court System</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/2.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#"> Web Development</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 20 December 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Tech Products That Makes Its Easier to Stay at Home</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/3.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#">It Services</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 22 December 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Open Source Job Report Show More Openings Fewer</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/4.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#">Artifical Intelligence</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 26 December 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Types of Social Proof What its Makes Them Effective</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/5.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#">Digital Technology</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 28 December 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Tech Firms Support Huawei Restriction, Balk at Cost</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-wrap">
-                                <a href="#"><img src="{{asset('assets/website/images/blog/main-home/6.jpg')}}" alt=""></a>
-                                <ul class="post-categories">
-                                    <li><a href="#">It Services</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog-content">
-                               <ul class="blog-meta">
-                                   <li class="date"><i class="fa fa-calendar-check-o"></i> 30 December 2020</li>
-                                   <li class="admin"><i class="fa fa-user-o"></i> admin</li>
-                               </ul>
-                               <h3 class="blog-title"><a href="#">Servo Project Joins The Linux Foundation Fold Desco</a></h3>
-                               <p class="desc">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-                               <div class="blog-button"><a href="#">Learn More</a></div>
-                            </div>
-                        </div>
-                     </div>
                 </div>
             </div>
-            <!-- Blog Section End -->
+            <!-- Project Section End -->
 
             <!-- Contact Section Start -->
             <div id="contact" class="rs-contact pt-120 gray-color pb-50">
@@ -687,7 +604,9 @@
 
                                </div>
                                 <div id="form-messages"></div>
-                                <form id="contact-form" method="post" action="">
+                                {{-- <form id="contact-form" method="post" action=""> --}}
+                                <form method="POST" action="{{route('customer.createsave')}}" >
+                                    @csrf
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
@@ -707,7 +626,7 @@
                                         </div>
                                         <div class="btn-part">
                                             <div class="form-group mb-0">
-                                                <button class="readon learn-more submit">ส่งข้อมูล</button>
+                                                <button class="readon learn-more submit" type="submit">ส่งข้อมูล</button>
                                                 {{-- <input class="readon learn-more submit" type="submit" value="Submit Now"> --}}
                                             </div>
                                         </div> 
@@ -837,7 +756,33 @@
         <!-- main js -->
         <script src="{{asset('assets/website/js/main.js')}}"></script>
 
-        @include('sweetalert::alert')
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
+
+    {{-- <script>
+        Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+        })
+    </script> --}}
+
+        @if (session('success'))
+        <script>
+            // Swal.fire(
+            //     'ขอบคุณค่ะ!',
+            //     'เราได้รับข้อมูลเรียบร้อยแล้ว เจ้าหน้าจะติดต่อท่านกลับภายใน 24 ชั่วโมงค่ะ',
+            //     'success'
+            // )
+            Swal.fire({
+            // title: 'ขอบคุณค่ะ',
+            icon: 'success',
+            html:'เราได้รับข้อมูลเรียบร้อยแล้ว <br> เจ้าหน้าจะติดต่อท่านกลับภายใน 24 ชั่วโมงค่ะ',
+            // showCancelButton: true,
+            confirmButtonText:'ตกลง',
+            })
+        </script>
+        @endif
 
 </html>

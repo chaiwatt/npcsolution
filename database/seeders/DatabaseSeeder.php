@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\FaceBookPagesTableSeeder;
+use Database\Seeders\FooterServicesTableSeeder;
+use Database\Seeders\ProductCategoriesTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,8 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(User::class);
-
+        $this->call(FooterServicesTableSeeder::class);
+        $this->call(ProductCategoriesTableSeeder::class);
         
     }
 }

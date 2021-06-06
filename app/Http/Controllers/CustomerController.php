@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-    public function index(){
-        // return 'ok';
+    public function createsave(Request $request){
+         return redirect()->back()->withSuccess('done');
      
 
     }

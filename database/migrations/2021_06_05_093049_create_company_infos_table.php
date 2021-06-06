@@ -20,7 +20,7 @@ class CreateCompanyInfosTable extends Migration
             $table->char('vatno',15)->default('0515558000967');
             $table->char('phone',15)->nullable();
             $table->char('fax',15)->nullable();
-            $table->string('email',15)->default('contact@npcsolution.com');
+            $table->string('email',50)->default('contact@npcsolution.com');
             $table->string('workday',50)->default('จันทร์-เสาร์');
             $table->string('worktime',50)->default('08.00-16.00');
             $table->timestamps();
