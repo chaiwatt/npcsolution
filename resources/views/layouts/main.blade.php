@@ -450,7 +450,7 @@
                         </h2>
                     </div> --}}
                     <div style="text-align: center">
-                        <div class="sub-text">Products</div>
+                        <div class="sub-text">PRODUCTS</div>
                         <h2 class=" title title3 pb-20 pt-10">
                             สินค้า
                         </h2>
