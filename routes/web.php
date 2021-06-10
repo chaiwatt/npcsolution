@@ -1,11 +1,31 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FaceBookLikeController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::group(['prefix' => 'video'], function(){
+    Route::get('', [VideoController::class, 'index'])->name('video');
+
+});
+
+Route::group(['prefix' => 'product'], function(){
+    Route::get('', [ProductController::class, 'index'])->name('product');
+    Route::get('detail/{id}', [ProductController::class, 'detail'])->name('product.detail');
+    
+});
+
+Route::group(['prefix' => 'service'], function(){
+    Route::get('que', [ServiceController::class, 'que'])->name('service.que');
+    Route::get('ondemand', [ServiceController::class, 'ondemand'])->name('service.ondemand');
+    Route::get('training', [ServiceController::class, 'training'])->name('service.training');
 });
 
 Route::group(['prefix' => 'customer'], function(){
