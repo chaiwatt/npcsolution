@@ -316,108 +316,25 @@
                 </div>
     
                 <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="true" data-md-device-dots="false">
+                    @foreach ($products as $product)
                     <div class="project-item">
                         <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/1.jpg')}}" alt="images"></a>
+                            <a href="{{route('product.detail',['id'=>$product->slug])}}"><img src="{{asset($product->picture)}}" alt="images"></a>
                         </div>
                         <div class="project-content ">
                             <div class="vertical-middle">
                                 <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">เครื่องอ่านบัตรประชาชนพร้อม SDK</a></h3>
-                                    <span class="category"><a href="{{route('product.detail',['id'=>1])}}">เพิ่มลงตะกร้า</a></span>
+                                    <h3 class="title"><a href="{{route('product.detail',['id'=>$product->slug])}}">{{$product->name}}</a></h3>
+                                    <span class="category"><a href="{{route('product.detail',['id'=>$product->slug])}}">เพิ่มลงตะกร้า</a></span>
                                 </div>
                             </div>
                         </div>
                         <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>เครื่องอ่านบัตรประชาชนพร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
+                            <div class="pt-20" style="font-size: 22px;"><h4>{{$product->name}}</h4></div>
+                            <span  style="font-size: 22px;">{{number_format($product->saleprice)}} บาท</span>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/2.jpg')}}" alt="images"></a>
-                        </div>
-                        <div class="project-content ">
-                            <div class="vertical-middle">
-                                <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">ปริ้นเตอร์คีออสพร้อม SDK</a></h3>
-                                    <span class="category"><a href="#">เพิ่มลงตะกร้า</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์คีออสพร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/3.jpg')}}" alt="images"></a>
-                        </div>
-                        <div class="project-content ">
-                            <div class="vertical-middle">
-                                <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">ลิ้นชักเก็บเงินพร้อม SDK</a></h3>
-                                    <span class="category"><a href="{{route('product.detail',['id'=>1])}}">เพิ่มลงตะกร้า</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>ลิ้นชักเก็บเงินพร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/4.jpg')}}" alt="images"></a>
-                        </div>
-                        <div class="project-content ">
-                            <div class="vertical-middle">
-                                <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">ปริ้นเตอร์ความร้อนพร้อม SDK</a></h3>
-                                    <span class="category"><a href="{{route('product.detail',['id'=>1])}}">เพิ่มลงตะกร้า</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์ความร้อนพร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/5.jpg')}}" alt="images"></a>
-                        </div>
-                        <div class="project-content ">
-                            <div class="vertical-middle">
-                                <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</a></h3>
-                                    <span class="category"><a href="{{route('product.detail',['id'=>1])}}">เพิ่มลงตะกร้า</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>ปริ้นเตอร์ความร้อนสลากยาพร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="{{route('product.detail',['id'=>1])}}"><img src="{{asset('assets/website/images/shop/5.jpg')}}" alt="images"></a>
-                        </div>
-                        <div class="project-content ">
-                            <div class="vertical-middle">
-                                <div class="vertical-middle-cell">
-                                    <h3 class="title"><a href="{{route('product.detail',['id'=>1])}}">บอร์ด Access Controll พร้อม SDK</a></h3>
-                                    <span class="category"><a href="{{route('product.detail',['id'=>1])}}">เพิ่มลงตะกร้า</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-desc text-center">
-                            <div class="pt-20" style="font-size: 22px;"><h4>บอร์ด Access Controll พร้อม SDK</h4></div>
-                            <span  style="font-size: 22px;">2500.00 บาท</span>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="btn-part mt-40 text-center">
                     <a class="readon discover more" href="{{route('product')}}">สินค้าทั้งหมด</a>

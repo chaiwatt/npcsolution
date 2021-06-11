@@ -1,19 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FaceBookLikeController;
 
-Route::get('/', function () {
-    return view('index');
-});
-
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('', [HomeController::class, 'index'])->name('index');
 Route::group(['prefix' => 'video'], function(){
     Route::get('', [VideoController::class, 'index'])->name('video');
-
 });
 
 Route::group(['prefix' => 'product'], function(){
