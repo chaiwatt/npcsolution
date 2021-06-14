@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\SubScriber;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -24,6 +25,13 @@ class ContactController extends Controller
             $customer->company = $request->company;
             $customer->message = $request->message;
             $customer->save();
+        }
+
+        $check = SubScriber::where('email',$request->email)->first();
+        if (empty($check)) {
+            $subscriber = new SubScriber();
+            $subscriber->email = $request->email;
+            $subscriber->save(); 
         }
        
          return redirect()->back()->withSuccess('done');
