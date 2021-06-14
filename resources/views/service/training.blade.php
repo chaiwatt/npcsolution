@@ -180,9 +180,9 @@
                         </div>
                         <p class="text-left">การเป็น Full Stack Developper นั้นไม่ง่าย หลาย ๆ คนเข้าใจว่าการที่สามารถเขียนโปรแกรม Fronted end กับ Back end ได้ ก็ได้ชื่อว่าเป็น  Full Stack Dev แล้วนั้นไม่ถูกต้องทั้งหมดครับ เพราะถ้าง่ายขนาดนั้นเงินเดือน Full Stack Dev คงไม่สูงเป็นระดับแสนบาท อันที่จริงแล้ว Full Stack dev ต้องมีความรู้รอบด้าน เช่น ถ้าลูกค้ามี Requirement ให้ทำเว็ปไซต์สักเว็บแล้วให้ออนไลน์ให้ลูกค้าดูใน 2-3 วัน สิ่งที่ Full Stack Dev ต้องทำได้คือ ทำ Demo UI (Fronted End) และตัวอย่างชุดคำสั่งการเรียกใช้ฐานข้อมูล (Back End) และการอัพโหลดขึ้นเซิร์ฟเวอร์นั้นสำคัญ การทำเว็บไซต์สมัยใหม่นั้นไม่ใช้ Share hosting กันแล้ว สิ่งที่ Full Stack Dev ต้องเป็นคือ "ทำทุกอย่างเอง ให้ได้ทั้งหมด" ประกอบด้วย การติดตั้งเว็บเซิร์ฟเวอร์บน VPS (Amazon aws, Upcloud, Digital Ocean), การติดตั้งและ Config Mail Server(Postfix, Dovecot, Roundcube / Squirrelmail, SMTP relay), การ Config SSL โดเมน ซึ่งเหล่านี้เป็นองค์ประกอบสำคัญที่ Full Stack Dev ทำได้ ถ้าทำไม่ได้หรือใช้เวลามากเกินไป ลูกค้าก็อาจจะเปลี่ยนใจได้ ในบริษัทใหญ่ ๆ การทำทุกอย่างให้เป็นหมดอาจไม่จำเป็น แต่กับบริษัทขนาดเล็กนั้นไม่ใช่ การมีทักษะเหล่านี้จะสามารถช่วยคุณในการหางานได้ง่ายขึ้น</p>
                         <div class="testi-content">
-                            <div class="testi-img">
+                            {{-- <div class="testi-img">
                             <img src="assets/images/testimonial/main-home/5.jpg" alt="">
-                            </div>
+                            </div> --}}
                             <div class="author-part">
                                 <div class="name">ชัยวัฒน์ ทวีจันทร์</div>
                                 <span class="designation">กรรมการผู้จัดการ บริษัทเอ็นพีซีโซลูชั่นแอนด์เซอร์วิส จำกัด</span>
