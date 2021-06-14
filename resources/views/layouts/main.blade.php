@@ -88,10 +88,10 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-3">
                                     <div class="logo-part">
-                                        <a href="#"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
+                                        <a href="{{url('')}}"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
                                     </div>
                                     <div class="mobile-menu">
-                                        <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
+                                        <a href="{{url('')}}" class="rs-menu-toggle rs-menu-toggle-close secondary">
                                             <i class="fa fa-bars"></i>
                                         </a>
                                     </div>
@@ -147,7 +147,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="#"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
+                                <a href="{{url('')}}"><img src="{{asset('assets/website/images/logo-dark.png')}}" alt=""></a>
                             </div>
                               <div class="textwidget pb-30"><p>บริษัท เอ็นพีซีโซลูชั่นแอนด์เซอร์วิส จำกัด เลขที่ 105 หมู่ที่ 8 ตำบลเหมืองง่า อำเภอเมือง จังหวัดลำพูน 51000 <br> เลขประจำตัวผู้เสียภาษี 0515558000967</p>
                               </div>
