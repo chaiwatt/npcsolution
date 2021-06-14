@@ -13,7 +13,7 @@
                     <li title="Go To Product">
                         <a class="active" href="{{url('')}}#products">สินค้า</a>
                     </li>
-                    <li>Digital Tharmomiter</li>
+                    <li>{{$product->name}}</li>
                 </ul>
             </div>
         </div>
