@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SubScriberController;
 use App\Http\Controllers\FaceBookLikeController;
 
 // Route::get('/', function () {
@@ -36,3 +38,13 @@ Route::group(['prefix' => 'customer'], function(){
     Route::post('editsave/{id}', [CustomerController::class, 'editsave'])->name('customer.editsave');
     Route::get('delete/{id}', [CustomerController::class, 'delete'])->name('customer.delete');
 });
+
+Route::group(['prefix' => 'contact'], function(){
+    Route::post('createsave', [ContactController::class, 'createsave'])->name('contact.createsave');
+});
+
+Route::group(['prefix' => 'subscriber'], function(){
+    Route::post('createsave', [SubScriberController::class, 'createsave'])->name('subscriber.createsave');
+});
+
+

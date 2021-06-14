@@ -391,7 +391,7 @@
 
                             </div>
                             <div id="form-messages"></div>
-                            <form method="POST" action="{{route('customer.createsave')}}" >
+                            <form method="POST" action="{{route('contact.createsave')}}" >
                                 @csrf
                                 <fieldset>
                                     <div class="row">
@@ -407,7 +407,9 @@
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                             <input class="from-control" type="text" name="company" placeholder="หน่วยงาน">
                                         </div>   
-                                    
+                                        <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
+                                            <textarea name="message" class="from-control" cols="30" rows="5" placeholder="ข้อความ"></textarea>
+                                        </div>   
                                 
                                     </div>
                                     <div class="btn-part">

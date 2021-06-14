@@ -189,19 +189,23 @@
                                 <li>
                                     <i class="flaticon-clock-1"></i>
                                     <div class="desc">
-                                        เวลาทำการ จันทร์-เสาร์: 08:00 - 16:00 น. 
+                                        เวลาทำการ จันทร์-เสาร์: 08:00 - 16:00น. 
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                      
                         <div class="col-lg-3 col-md-12 col-sm-12">
                             <h3 class="widget-title">สมัครรับข่าวสาร</h3>
                             <p class="widget-desc">กรอกอีเมลเพื่อรับข้อมูลที่เป็นประโยชน์ ท่านสามารถยกเลิกการรับข้อมูลได้ตลอดเวลา</p>
-                            <p>
-                                <input type="email" name="EMAIL" placeholder="กรอกอีเมล" required="">
-                                <em class="paper-plane"><input type="submit" value="Sign up"></em>
-                                <i class="flaticon-send"></i>
-                            </p>
+                            <form method="POST" action="{{route('subscriber.createsave')}}" >
+                                <p>                                 
+                                    @csrf
+                                    <input type="email" name="email" placeholder="กรอกอีเมล">
+                                    <em class="paper-plane"><input type="submit" value="Sign up"></em>
+                                    <i class="flaticon-send"></i>
+                                </p>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -260,16 +264,33 @@
     </body>
     <script>
         AOS.init();
+        console.log("{{$errors->count()}}");
+        var errorcount = "{{$errors->count()}}";
+        if(errorcount > 0){
+            Swal.fire({
+            icon: 'warning',
+            html:'กรณากรอกข้อมูลให้ถูกต้องค่ะ',
+            confirmButtonText:'ตกลง',
+            })
+        }
       </script>
     @if (session('success'))
         <script>
             Swal.fire({
-            // title: 'ขอบคุณค่ะ',
             icon: 'success',
             html:'เราได้รับข้อมูลเรียบร้อยแล้ว <br> เจ้าหน้าจะติดต่อท่านกลับภายใน 24 ชั่วโมงค่ะ',
-            // showCancelButton: true,
             confirmButtonText:'ตกลง',
             })
         </script>
     @endif
+    @if (session('subscribe'))
+        <script>
+            Swal.fire({
+            icon: 'success',
+            html:'ขอบคุณที่สนใจรับข้อมูลข่าวสารจากเราคะ',
+            confirmButtonText:'ตกลง',
+            })
+        </script>
+    @endif
+    
 </html>
