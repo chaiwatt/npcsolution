@@ -215,10 +215,10 @@
                     <div class="row y-middle">
                         <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
-                                <li><a href="#">หน้าแรก</a></li>
-                                <li><a href="#services">บริการ</a></li>
-                                <li><a href="#customers">ลูกค้าของเรา</a></li>
-                                <li><a href="#contact">ติดต่อ</a></li>
+                                <li><a href="{{url('/')}}">หน้าแรก</a></li>
+                                <li><a href="{{url('/')}}#services">บริการ</a></li>
+                                <li><a href="{{url('/')}}#customers">ลูกค้าของเรา</a></li>
+                                <li><a href="{{url('/')}}#contact">ติดต่อ</a></li>
                                 {{-- <li><a href="faq.html">FAQs</a></li> --}}
                             </ul>
                         </div>
@@ -234,6 +234,8 @@
         <!-- Footer End -->
 
     </li>
+
+</li>
 
         <!-- start scrollUp  -->
         <div id="scrollUp" class="orange-color">
