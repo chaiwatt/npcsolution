@@ -35,17 +35,16 @@ class ContactController extends Controller
             $subscriber->save(); 
         }
 
-        $this->LineSend('ผู้ติดต่อใหม่ ' . $request->name . ' โทร' . $request->phone  . ' อีเมล' . $request->email  . ' หน่วยงาน' . $request->company . ' ข้อความ' . $request->message );
-       
+        $users = User::where('type',1)->whereNotNull('linetoken')->get();
+
+        foreach ($users as $key => $user) {
+            $message = 'ผู้ติดต่อใหม่ ' . $request->name . ' โทร' . $request->phone  . ' อีเมล' . $request->email  . ' หน่วยงาน' . $request->company . ' ข้อความ' . $request->message  ;
+            $this->LineSend($message , $user->linetoken);
+        }
          return redirect()->back()->withSuccess('done');
     }
 
-    public function LineSend($txt){
-        $lineapi = User::first()->linetoken ;
-        if(Empty($lineapi)){
-            return 'ยังไม่มี access_token';
-        }
-        $message = $txt;
+    public function LineSend($message,$lineapi){
         $mms =  trim($message); // ข้อความที่ต้องการส่ง
         date_default_timezone_set("Asia/Bangkok");
         $chOne = curl_init(); 
@@ -61,7 +60,6 @@ class ContactController extends Controller
         curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
         curl_setopt( $chOne, CURLOPT_RETURNTRANSFER, 1); 
         $result = curl_exec( $chOne ); 
-        //Check error 
         if(curl_error($chOne)) 
         { 
             // echo 'error:' . curl_error($chOne); 

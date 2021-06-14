@@ -20,12 +20,14 @@ class UsersTableSeeder extends Seeder
                 'name' => 'chaiwat',
                 'email' => 'contact@npcsolution.com',        
                 'linetoken' => 'FzQOFQXI2UPTluBNPIHdlyq3qneOvO9GoYSRAGof6Do',
+                'type' => 1,
                 'password' => Hash::make('11111111')
             ],
             [
                 'name' => 'karn',
                 'email' => 'npcsolutionandservice@gmail.com',    
-                'linetoken' => '',        
+                'linetoken' => '',    
+                'type' => 1,    
                 'password' => Hash::make('11111111')
             ]
         ]);
