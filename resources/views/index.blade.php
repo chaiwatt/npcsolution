@@ -360,7 +360,7 @@
                                 </div>
                                 <div class="address-text">
                                     <span class="label">โทรศัพท์:</span>
-                                    <a href="tel:053093254">053-093254</a>
+                                    <a href="tel:053093254">053-093254, 088-2514838</a>
                                 </div>
                             </div>
                             <div class="address-box mb-25">
