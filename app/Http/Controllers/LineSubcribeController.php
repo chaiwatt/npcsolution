@@ -12,19 +12,19 @@ class LineSubcribeController extends Controller
         $info = User::first()->name;
         $url = "https://notify-bot.line.me/oauth/authorize?".
             http_build_query(array(
-                'response_type' => 'code', // ไม่แก้ไขส่วนนี้
+                'response_type' => 'code',
                 'client_id' => LineClient::first()->client_id,
                 'redirect_uri' => route('line.callback'),  
-                'scope' => 'notify', // ไม่แก้ไขส่วนนี้
+                'scope' => 'notify', 
                 'state' => $info
             )
         );
-        header("Location: {$url}"); // ยิงไปหน้าการเชื่อมต่อบริการ
+        header("Location: {$url}"); 
         exit;
     }
 
     public function LineCallback(Request $request){
-        $state = $request->input('state') ; //Input::get('state');
+        $state = $request->input('state') ; 
         $lineclient = LineClient::first();
 
         $tokenURL = "https://notify-bot.line.me/oauth/token";
@@ -33,8 +33,8 @@ class LineSubcribeController extends Controller
             'Content-Type: application/x-www-form-urlencoded'
         );
         $data = array(
-            'grant_type' => 'authorization_code', // ไม่แก้ไขส่วนนี้
-            'code' =>  $request->input('code') , //Input::get('code'),
+            'grant_type' => 'authorization_code',
+            'code' =>  $request->input('code') , 
             'redirect_uri' => url('/line/linecallback'),
             'client_id' => $lineclient->client_id,
             'client_secret' => $lineclient->client_secret               
@@ -51,7 +51,7 @@ class LineSubcribeController extends Controller
         $result = curl_exec( $ch );
         $result = json_decode($result,TRUE);
         curl_close( $ch );
-        if($result['status']==200){
+        if($result['status'] == 200){
             User::first()->update([
             'linetoken' => $result['access_token'],
             ]);
