@@ -336,6 +336,7 @@
                     </div>
                     @endforeach
                 </div>
+                <div id="contact" ></div>
                 <div class="btn-part mt-40 text-center">
                     <a class="readon discover more" href="{{route('product')}}">สินค้าทั้งหมด</a>
                 </div>
@@ -344,7 +345,7 @@
         <!-- Project Section End -->
 
         <!-- Contact Section Start -->
-        <div id="contact" class="rs-contact pt-120 gray-color pb-50">
+        <div class="rs-contact pt-120 gray-color pb-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
