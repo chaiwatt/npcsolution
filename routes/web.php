@@ -9,6 +9,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\SubScriberController;
 use App\Http\Controllers\FaceBookLikeController;
+use App\Http\Controllers\LineSubcribeController;
 
 // Route::get('/', function () {
 //     return view('index');
@@ -45,6 +46,12 @@ Route::group(['prefix' => 'contact'], function(){
 
 Route::group(['prefix' => 'subscriber'], function(){
     Route::post('createsave', [SubScriberController::class, 'createsave'])->name('subscriber.createsave');
+});
+
+Route::group(['prefix' => 'line'], function(){
+    Route::get('linesubscribe', [LineSubcribeController::class, 'LineSubcribe'])->name('line.subcribe');
+    Route::get('linecallback', [LineSubcribeController::class, 'LineCallback'])->name('line.callback');
+    Route::get('linesend', [LineSubcribeController::class, 'LineSend'])->name('line.send');
 });
 
 
