@@ -369,7 +369,7 @@
                                 </div>
                                 <div class="address-text">
                                     <span class="label">อีเมล:</span>
-                                    <a href="#">contact@npcsolution.com</a>
+                                    <a href="mailto:contact@npcsolution.com">contact@npcsolution.com</a>
                                 </div>
                             </div>
                             <div class="address-box">
