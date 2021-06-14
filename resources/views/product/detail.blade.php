@@ -11,7 +11,7 @@
                         <a class="active" href="{{url('')}}">หน้าแรก</a>
                     </li>
                     <li title="Go To Product">
-                        <a class="active" href="{{url('')}}#products">สินค้า</a>
+                        <a class="active" href="{{route('product')}}">สินค้า</a>
                     </li>
                     <li>{{$product->name}}</li>
                 </ul>
