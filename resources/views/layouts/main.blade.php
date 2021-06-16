@@ -271,7 +271,7 @@
         if(errorcount > 0){
             Swal.fire({
             icon: 'warning',
-            html:'กรณากรอกข้อมูลให้ถูกต้องค่ะ',
+            html:'กรุณากรอกข้อมูลให้ถูกต้องค่ะ',
             confirmButtonText:'ตกลง',
             })
         }
