@@ -437,7 +437,10 @@
                     confirmButtonText:'ตกลง',
                     })
                 }
+                $(this).val('');
             e.preventDefault();
         });
+
+
     </script>
 @endsection
