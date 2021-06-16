@@ -10,14 +10,13 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function createsave(Request $request){
-
-        return $request->all();
         $this->validate(request(), [
             'email' => 'required|email',
             'name' => 'required',
             'phone' => 'required',
             'company' => 'required',
             'message' => 'required', 
+            'g-recaptcha-response' => 'required'
         ]);
         $check = Contact::where('email',$request->email)->first();
         if(empty($check)){
