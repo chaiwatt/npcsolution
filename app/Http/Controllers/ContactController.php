@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function createsave(Request $request){
+        return $request->all();
         $this->validate(request(), [
             'email' => 'required|email',
             'name' => 'required',

@@ -7,9 +7,12 @@ use Illuminate\Http\Request;
 
 class SubScriberController extends Controller
 {
+    
     public function createsave(Request $request){
+        return $request->all();
         $this->validate(request(), [
             'email' => 'required|email',
+            'g-recaptcha-response' => 'required'
         ]);
         $check = SubScriber::where('email',$request->email)->first();
         if (empty($check)) {
