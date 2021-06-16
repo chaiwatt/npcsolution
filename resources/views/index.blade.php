@@ -396,19 +396,19 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control" type="text" name="name" placeholder="ชื่อ">
+                                            <input class="from-control blockhtml" type="text" name="name" placeholder="ชื่อ">
                                         </div> 
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                             <input class="from-control" type="text" name="email" placeholder="อีเมล">
                                         </div>   
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control" type="text" name="phone" placeholder="เบอร์โทรศัพท์">
+                                            <input class="from-control blockhtml" type="text" name="phone" placeholder="เบอร์โทรศัพท์">
                                         </div>   
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control" type="text" name="company" placeholder="หน่วยงาน">
+                                            <input class="from-control blockhtml" type="text" name="company" placeholder="หน่วยงาน">
                                         </div>   
                                         <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
-                                            <textarea name="message" class="from-control" cols="30" rows="5" placeholder="ข้อความ"></textarea>
+                                            <textarea name="message" class="from-control blockhtml" cols="30" rows="5" placeholder="ข้อความ"></textarea>
                                         </div>   
                                         @captcha
                                     </div>
@@ -426,5 +426,18 @@
         </div>
     @endsection
 
-@section('script')
+@section('pageScript')
+    <script>
+        $(".blockhtml").focusout( function(e) {
+            var reg =/<(.|\n)*?>/g; 
+            if (reg.test($(this).val()) == true) {
+                Swal.fire({
+                    icon: 'warning',
+                    html:'ไม่อนุญาตให้ใช้ HTML code ค่ะ',
+                    confirmButtonText:'ตกลง',
+                    })
+                }
+            e.preventDefault();
+        });
+    </script>
 @endsection

@@ -263,7 +263,11 @@
         <script src="{{asset('assets/website/js/aos/aos.js')}}"></script>
 
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        @section('pageScript')
+	    @show
     </body>
+
     <script>
         AOS.init();
         console.log("{{$errors->count()}}");
@@ -275,6 +279,7 @@
             confirmButtonText:'ตกลง',
             })
         }
+
       </script>
     @if (session('success'))
         <script>
