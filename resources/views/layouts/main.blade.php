@@ -202,10 +202,10 @@
                                 <p>                                 
                                     @csrf
                                     <input type="email" name="email" placeholder="กรอกอีเมล">
-                                    @captcha
                                     <em class="paper-plane"><input type="submit" value="Sign up"></em>
                                     <i class="flaticon-send"></i>
                                 </p>
+                                @captcha
                             </form>
                         </div>
                     </div>
