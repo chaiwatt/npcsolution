@@ -436,11 +436,9 @@
                     html:'ไม่อนุญาตให้ใช้ HTML code ค่ะ',
                     confirmButtonText:'ตกลง',
                     })
+                    $(this).val('');
                 }
-                $(this).val('');
-            e.preventDefault();
+            e.preventDefault();     
         });
-
-
     </script>
 @endsection

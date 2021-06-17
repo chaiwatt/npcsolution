@@ -21,5 +21,7 @@ class ProductCategoriesTableSeeder extends Seeder
                 'name' => 'ซอร์ฟแวร์',    
             ]
         ]);
+
+        
     }
 }

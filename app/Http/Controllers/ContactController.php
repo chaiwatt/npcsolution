@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Spam;
 use App\Models\User;
 use App\Models\Contact;
 use App\Models\SubScriber;
@@ -16,8 +17,16 @@ class ContactController extends Controller
             'phone' => 'required',
             'company' => 'required',
             'message' => 'required', 
-            'g-recaptcha-response' => 'required'
+            // 'g-recaptcha-response' => 'required'
         ]);
+        $spams = Spam::get();
+
+        foreach ($spams as $key => $spam) {
+            if(strpos(strtolower($request->message), $spam->word) !== false){
+                return redirect()->back()->withError('done');
+            }
+        }
+
         $check = Contact::where('email',$request->email)->first();
         if(empty($check)){
             $customer = new Contact();
