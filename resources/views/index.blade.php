@@ -396,25 +396,25 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control blockhtml" type="text" name="name" placeholder="ชื่อ">
+                                            <input class="from-control blockhtml" type="text" name="name" id="name" placeholder="ชื่อ">
                                         </div> 
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control" type="text" name="email" placeholder="อีเมล">
+                                            <input class="from-control" type="text" name="email" id="email" placeholder="อีเมล">
                                         </div>   
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control blockhtml" type="text" name="phone" placeholder="เบอร์โทรศัพท์">
+                                            <input class="from-control blockhtml" type="text" name="phone" id="phone"  placeholder="เบอร์โทรศัพท์">
                                         </div>   
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control blockhtml" type="text" name="company" placeholder="หน่วยงาน">
+                                            <input class="from-control blockhtml" type="text" name="company" id="company" placeholder="หน่วยงาน">
                                         </div>   
                                         <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
-                                            <textarea name="message" class="from-control blockhtml" cols="30" rows="5" placeholder="ข้อความ"></textarea>
+                                            <textarea name="message" id="message" class="from-control blockhtml" cols="30" rows="5" placeholder="ข้อความ"></textarea>
                                         </div>   
                                         @captcha
                                     </div>
                                     <div class="btn-part">
                                         <div class="form-group mb-0">
-                                            <button class="readon learn-more submit" type="submit">ส่งข้อมูล</button>
+                                            <button class="readon learn-more submit" onclick="confirmsubmit(event);" type="submit">ส่งข้อมูล</button>
                                         </div>
                                     </div> 
                                 </fieldset>
@@ -437,8 +437,49 @@
                     confirmButtonText:'ตกลง',
                     })
                     $(this).val('');
-                }
-            e.preventDefault();     
+            }
+            e.preventDefault();    
         });
+
+        function confirmsubmit(e) {
+            e.preventDefault();
+            var frm = e.target.form;
+            var reg =/<(.|\n)*?>/g; 
+            if($('#name').val() == '' || $('#email').val() == '' || $('#phone').val() == '' || $('#company').val() == '' || $('#message').val() == '' || ValidateEmail($('#email').val()) == false){
+                if (reg.test($('#name').val()) == true || reg.test($('#phone').val()) == true || reg.test($('#company').val()) == true || reg.test($('#message').val()) == true) {
+                    Swal.fire({
+                        icon: 'warning',
+                        html:'ไม่อนุญาตให้ใช้ HTML code ค่ะ',
+                        confirmButtonText:'ตกลง',
+                    })
+                    return;
+                }
+            }else{
+                $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+                    var info = JSON.stringify(data, null, 2);
+                    const obj = JSON.parse(info);
+                    if(obj.countryCode == 'TH'){
+                        frm.submit();
+                    }else{
+                        Swal.fire({
+                            icon: 'warning',
+                            html:'ไม่อนุญาตให้ส่งข้อมูลจากนอกประเทศไทย',
+                            confirmButtonText:'ตกลง',
+                        })
+                        return;
+                    }
+                });
+            }
+
+            
+        function ValidateEmail(mail) 
+        {
+            if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+            {
+                return (true)
+            }
+                return (false)
+            }
+        }
     </script>
 @endsection

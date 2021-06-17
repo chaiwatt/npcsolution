@@ -17,7 +17,7 @@ class ContactController extends Controller
             'phone' => 'required',
             'company' => 'required',
             'message' => 'required', 
-            // 'g-recaptcha-response' => 'required'
+            'g-recaptcha-response' => 'required'
         ]);
         $spams = Spam::get();
 
