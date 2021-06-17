@@ -410,7 +410,7 @@
                                         <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
                                             <textarea name="message" id="message" class="from-control blockhtml" cols="30" rows="5" placeholder="ข้อความ"></textarea>
                                         </div>   
-                                        @captcha
+                                        {{-- @captcha --}}
                                     </div>
                                     <div class="btn-part">
                                         <div class="form-group mb-0">
