@@ -23,6 +23,7 @@ class ProductsTableSeeder extends Seeder
                 'details' => 'การนำไปใช้งาน ใช้กับระบบงานบัตรประชาชน ระบบทะเบียนราษฏร์ของกรมการปกครอง ระบบประกันสุขภาพ (สปสช. NHSO) และประกันสังคมสำหรับโรงพยาบาล คลินิก โรงพยาบาล โรงเรียน มหาวิทยาลัย หน่วยงานด้านเกษตรและสหกรณ์ สถานีตำรวจ หน่วยงานบริการประชาชนธนาคาร สถาบันการเงิน โรงแรม บริษัทขนส่ง หน่วยงานราชการ องค์การบริหารส่วนจังหวัด ที่ว่าการอำเภอ องค์กรภาครัฐและเอกชนอื่นๆ', 
                 'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/hWPJPQz_iEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 
                 'saleprice' => 1350, 
+                'qrpayment' => 'assets/website/images/products/qrpayment/smartcard.png',
                 'product_category_id' => 1,
                 'stock' => 10
             ]

@@ -26,6 +26,7 @@ class CreateProductsTable extends Migration
             $table->double('saleprice',10,2)->default(0);
             $table->unsignedBigInteger('product_category_id')->default(1);
             $table->unsignedBigInteger('vendor_id')->nullable();
+            $table->text('qrpayment')->nullable();
             $table->char('stock',4)->default(0);
             $table->char('waruntee',1)->default(1);
             $table->timestamps();

@@ -396,7 +396,7 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control blockhtml" type="text" name="name" id="name" placeholder="ชื่อ">
+                                            <input class="from-control blockhtml thaionly" type="text" name="name" id="name" placeholder="ชื่อ (ภาษาไทยเท่านั้น)">
                                         </div> 
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
                                             <input class="from-control" type="text" name="email" id="email" placeholder="อีเมล">
@@ -405,7 +405,7 @@
                                             <input class="from-control blockhtml" type="text" name="phone" id="phone"  placeholder="เบอร์โทรศัพท์">
                                         </div>   
                                         <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                            <input class="from-control blockhtml" type="text" name="company" id="company" placeholder="หน่วยงาน">
+                                            <input class="from-control blockhtml thaionly" type="text" name="company" id="company" placeholder="หน่วยงาน (ภาษาไทยเท่านั้น)">
                                         </div>   
                                         <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
                                             <textarea name="message" id="message" class="from-control blockhtml" cols="30" rows="5" placeholder="ข้อความ"></textarea>
@@ -434,6 +434,19 @@
                 Swal.fire({
                     icon: 'warning',
                     html:'ไม่อนุญาตให้ใช้ HTML code ค่ะ',
+                    confirmButtonText:'ตกลง',
+                    })
+                    $(this).val('');
+            }
+            e.preventDefault();    
+        });
+
+        $(".thaionly").focusout( function(e) {
+            var reg =/^[ก-๏\s]+$/; 
+            if (reg.test($(this).val()) !== true) {
+                Swal.fire({
+                    icon: 'warning',
+                    html:'รองรับภาษาไทยเท่านั้นค่ะ',
                     confirmButtonText:'ตกลง',
                     })
                     $(this).val('');
@@ -481,5 +494,7 @@
                 return (false)
             }
         }
+
+
     </script>
 @endsection

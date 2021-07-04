@@ -270,7 +270,6 @@
 
     <script>
         AOS.init();
-        console.log("{{$errors->count()}}");
         var errorcount = "{{$errors->count()}}";
         if(errorcount > 0){
             Swal.fire({

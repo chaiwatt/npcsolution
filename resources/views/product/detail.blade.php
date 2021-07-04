@@ -37,6 +37,7 @@
                             <p class="some-text">{{$product->description}}</p>
                             <form>
                                 {{-- <input type="number" class="input-text" step="1" min="1" value="1"> --}}
+                                {{-- <a class="add-btn ml-10" type="button" href="#purchase" target="_blank">สั่งซื้อ</a> --}}
                                 <a class="add-btn ml-10" type="button" href="https://www.facebook.com/smartquesystem/" target="_blank">สั่งซื้อ</a>
                             </form>
                             <p class="category"><span>หมวดหมู่:</span><a href="#"> {{$product->category->name}}</a></p>
@@ -45,16 +46,17 @@
                 </div>
                 <div class="tab-area">
                     <ul class="nav nav-tabs">
-                        <li><a class="active" href="#one" data-toggle="tab">ข้อมูลจำเพาะของสินค้า</a></li>
-                        <li><a href="#two" data-toggle="tab">รายละเอียดสินค้า</a></li>
+                        <li><a class="active" href="#productdescription" data-toggle="tab">ข้อมูลจำเพาะของสินค้า</a></li>
+                        <li><a href="#productinfo" data-toggle="tab">รายละเอียดสินค้า</a></li>
+                        {{-- <li><a href="#purchase" id="" data-toggle="tab">สั่งซื้อ</a></li> --}}
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane active" id="one">
+                        <div class="tab-pane active" id="productdescription">
                             {!!$product->specification!!}
                         </div>
 
-                        <div class="tab-pane" id="two">
+                        <div class="tab-pane" id="productinfo">
                             <p>
                                 {{$product->details}}
                             </p>
@@ -68,6 +70,9 @@
                                 </div>
                             </div>
                         </div>
+                        {{-- <div class="tab-pane" id="purchase">
+                            <img src="{{asset($product->qrpayment)}}" alt="" style="width: 250px;">
+                        </div> --}}
                     </div>
                 </div>
             </div>

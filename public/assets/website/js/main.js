@@ -356,16 +356,16 @@
 	/*----------------------------
     single-productjs active
     ------------------------------ */
-    var singleproductimage = $('.single-product-image');
-    if(singleproductimage.length){
-        $('.single-product-image').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.single-product-nav'
-        });
-    }
+    // var singleproductimage = $('.single-product-image');
+    // if(singleproductimage.length){
+    //     $('.single-product-image').slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         arrows: false,
+    //         fade: true,
+    //         asNavFor: '.single-product-nav'
+    //     });
+    // }
 
     var singleproductnav = $('.single-product-nav');
     if(singleproductnav.length){
