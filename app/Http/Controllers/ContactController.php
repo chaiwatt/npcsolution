@@ -11,7 +11,11 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function createsave(Request $request){
-        // return $request->all();
+
+        if(Empty(preg_replace('/[^ก-ฮ]/u','',$request->name)) || Empty(preg_replace('/[^ก-ฮ]/u','',$request->company))){
+            return redirect()->back()->withError('ผิดพลาด');
+        }
+
         $this->validate(request(), [
             'email' => 'required|email',
             'name' => 'required',
